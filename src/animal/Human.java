@@ -1,5 +1,18 @@
 package animal;
 
-public class Human {
+public class Human extends Animal implements Thinkable{
+	private String hobby;
 
+	 public void setHobby (String hobby) {
+		this.hobby = hobby;
+	    }
+
+	 Human(String name,int age, String hobby) {
+	        super(name,age);
+	        this.hobby = hobby;
+	    }
+
+	 public void think() {
+	    	System.out.println ( "私は" + hobby + "について考えています。");
+	    }
 }

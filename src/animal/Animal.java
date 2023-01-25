@@ -1,11 +1,22 @@
 package animal;
 
 public class Animal {
-	  // フィールドなどの内容は省略。自力で考えてみましょう
+	private String name;
+	private int age;
 
-
-	  // この部分を、コンストラクタを使った初期化の処理で埋めてみましょう
-	  public Animal() {
-
-	  }
+	public void setName(String name) {
+		this.name = name;
 	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+	 Animal(String name,int age) {
+	        this.name = name;
+	        this.age = age;
+	 }
+
+	 public void say() {
+	    	System.out.println ( this.name + "です。"+ age + "歳です。");
+	    }
+}

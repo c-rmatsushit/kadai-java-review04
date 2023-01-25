@@ -1,5 +1,6 @@
 package animal;
 
-public class Thinkable {
+public interface Thinkable {
+	public abstract void think();
 
 }
